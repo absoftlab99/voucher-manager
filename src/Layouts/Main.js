@@ -8,12 +8,32 @@ const Main = () => {
         <div>
             <Header></Header>
             <div className='grid grid-cols-12'>
-                <div className='col-span-3 bg-neutral'>
-                    <div className="navbar-center">
-                        <h1 className="btn btn-ghost text-2xl normal-case ff-primary">ভাউচার ম্যানেজার</h1>
+                <div className='col-span-2 bg-neutral vh'>
+                    <div className="">
+                        <h1 className="btn btn-ghost text-2xl normal-case ff-primary text-warning fa-bounce">ভাউচার ম্যানেজার</h1>
+                        <div className='text-start'>
+                            <div className='hover:bg-base-100 cursor-pointer'>
+                                <Link className='block' to='/dashboard'><i class="fa-duotone fa-chart-simple p-3 text-warning"></i> Dashboard</Link>
+                            </div>
+                            <div className='hover:bg-base-100 cursor-pointer'>
+                                <Link className='block' to='/voucher-list'><i class="fa-duotone fa-file-invoice-dollar p-3 text-warning"></i> Voucher List</Link>
+                            </div>
+                            <div className='hover:bg-base-100 cursor-pointer'>
+                                <Link className='block' to='/voucher-generator'><i class="fa-duotone fa-file-invoice p-3 text-warning"></i> Generate Voucher</Link>
+                            </div>
+                            <div className='hover:bg-base-100 cursor-pointer'>
+                                <Link className='block' to='/client-list'><i class="fa-duotone fa-user-tie p-3 text-warning"></i> Client List</Link>
+                            </div>
+                            <div className='hover:bg-base-100 cursor-pointer'>
+                                <Link className='block' to='/service-list'><i class="fa-duotone fa-list-timeline p-3 text-warning"></i> Service List</Link>
+                            </div>
+                            <div className='hover:bg-base-100 cursor-pointer'>
+                                <Link className='block' to='/add-service'><i class="fa-duotone fa-rectangle-history-circle-plus p-3 text-warning"></i> Add Service</Link>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div className='col-span-9'>
+                <div className='col-span-10'>
                     <div>
                         <div className="navbar bg-neutral">
                             <div className="navbar-start">
